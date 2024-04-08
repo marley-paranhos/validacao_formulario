@@ -65,7 +65,7 @@ emailInput.addEventListener("change", (e) => {
         // adicionar estilos dinâmicos se o valor tiver menos de 3 caracteres
         emailHelper.innerText = "Precisa inserir um email válido"
         estilizarInputIncorreto(emailInput, emailHelper);
-        inputsCorretos.email = False;
+        inputsCorretos.email = false;
     }
 });
 
@@ -83,11 +83,11 @@ senhaInput.addEventListener("blur", (e) => {
     if (valorSenha == "") {
         senhaHelper.innerText = "Favor preencher este campo com uma senha válida!";
        estilizarInputIncorreto(senhaInput, senhaHelper);
-        inputsCorretos.senha = False;
+        inputsCorretos.senha = false;
     } else {       
         senhaHelper.innerText = "";
         estilizarInputCorreto(senhaInput, senhaHelper);
-        inputsCorretos.senha = True;
+        inputsCorretos.senha = true;
     }
 });
 
